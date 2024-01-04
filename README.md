@@ -15,5 +15,8 @@ The MediaPipe model is not fully trained to predict depth so you may wish to ign
 path - The path to the landmark file.
 participant_id - A unique identifier for the data contributor.
 sequence_id - A unique identifier for the landmark sequence.
-
 sign - The label for the landmark sequence.
+
+<img width="1054" alt="Screenshot 2024-01-05 at 1 05 02 AM" src="https://github.com/heychhavi/Google---Isolated-Sign-Language-Recognition/assets/28872896/d0888c7f-53b8-480f-b65e-afc02bc0a7a7">
+
+
