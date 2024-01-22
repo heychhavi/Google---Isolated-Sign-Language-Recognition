@@ -5,6 +5,7 @@ The data is in the form of a parquet file, for example, Train_landmark_files/[pa
 
 In the training data, we have the landmark data. 
 The landmarks were extracted from raw videos with the MediaPipe holistic model. 
+
 It is a given that not every frame included hands that the model could detect or that were visible.
 ###
 frame - The frame number in the raw video.
