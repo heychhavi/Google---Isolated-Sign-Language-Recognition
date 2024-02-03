@@ -1,23 +1,24 @@
 # Sign Language Recognition
 
-### DATA:
-The data is in the form of a parquet file, for example, Train_landmark_files/[participant_id] / [seqence_id].parquet.
+### Project Overview
+This project focuses on recognizing sign language through advanced machine learning models, leveraging landmark data extracted from sign language videos. Our goal is to accurately interpret sign language, thereby enhancing communication accessibility.
 
-In the training data, we have the landmark data. 
-The landmarks were extracted from raw videos with the MediaPipe holistic model. 
+### Data Description
+We use video data that includes landmarks extracted using the MediaPipe holistic model. Each frame's data contains various attributes such as frame number, landmark type, and spatial coordinates.
 
-It is a given that not every frame included hands that the model could detect or that were visible.
-###
-frame - The frame number in the raw video.
-row_id - A unique identifier for the row.
-type - The type of landmark. One of ['face', 'left_hand', 'pose', 'right_hand'].
-landmark_index - The landmark index number. Details of the hand landmark locations can be found here.
-[x/y/z] - The normalized spatial coordinates of the landmark. These are the only columns that will be provided to your submitted model for inference. 
-The MediaPipe model is not fully trained to predict depth so you may wish to ignore the z values.train.csv
-path - The path to the landmark file.
-participant_id - A unique identifier for the data contributor.
-sequence_id - A unique identifier for the landmark sequence.
-sign - The label for the landmark sequence.
+(Include more details about the data as previously described.)
+
+### Models Used
+In this project, several neural network architectures were implemented and evaluated for their effectiveness in sign language recognition. The models include:
+
+LSTM Neural Network: A basic LSTM model to capture temporal dependencies in sequential data.
+LSTM with Dropout: An LSTM model with dropout layers to prevent overfitting.
+Convolutional Neural Network (CNN): A standard CNN architecture to capture spatial relationships.
+CNN with More Layers: An advanced CNN model with additional layers to enhance feature extraction.
+CNN with Learning Rate Scheduler: A CNN model augmented with a learning rate scheduler to optimize the training process.
+CNN with Regularization: Incorporating regularization techniques in CNN to improve generalization.
+Transformer Model: Utilization of the Transformer architecture, known for its effectiveness in handling sequential data.
+Each model was carefully crafted and tuned to interpret the complex patterns in sign language data.
 
 <img width="1054" alt="Screenshot 2024-01-05 at 1 05 02 AM" src="https://github.com/heychhavi/Google---Isolated-Sign-Language-Recognition/assets/28872896/d0888c7f-53b8-480f-b65e-afc02bc0a7a7">
 
